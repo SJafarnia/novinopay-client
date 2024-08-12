@@ -1,0 +1,30 @@
+{
+  "name": "novinopay-client",
+  "version": "1.0.0",
+  "description": "Novinopay-client is a Nodejs client for Novinopay internet payment gateway API.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "release": "pnpm run build && changeset publish"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SJafarnia/novinopay-client"
+  },
+  "author": "Sadeq Jafarnia",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.1.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.7"
+  }
+}
