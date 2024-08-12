@@ -73,7 +73,8 @@ const response = await client.PaymentVerify({
   authority: "Authority id recieved from callback url parameters or Payment response",
 });
 
-// always checks if verification amount is the same as the amount issued by your Payment request and it's not manipulated by user.
+// always checks if verification amount is the same as the amount issued by your Payment request
+and it's not manipulated by user.
 
 ```
 
