@@ -2,7 +2,7 @@ import { IPVersion } from "net";
 
 export type PaymentRequestMethodInput = {
   amount: number;
-  callBackUrl: string;
+  callbackUrl: string;
   invoice_id: string;
   description: string;
   Email: string;

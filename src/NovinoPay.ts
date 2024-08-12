@@ -101,7 +101,7 @@ export class NovinoPay {
    */
   PaymentRequest({
     amount,
-    callBackUrl,
+    callbackUrl,
     invoice_id,
     description,
     Email,
@@ -112,7 +112,7 @@ export class NovinoPay {
     const params: PaymentRequestDataType = {
       merchant_id: this.merchant,
       amount: amount,
-      callback_url: callBackUrl,
+      callback_url: callbackUrl,
       invoice_id: invoice_id,
       description: description,
       mobile: mobile,

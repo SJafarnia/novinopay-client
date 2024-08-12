@@ -56,7 +56,7 @@ const client = new NovinoPayClient("merchantID", true)
 ```
 const response = await client.PaymentRequest({
   amount: 10000,
-  callBackUrl: "http://localhost:3000/PaymentCallbackURL",
+  callbackUrl: "http://localhost:3000/PaymentCallbackURL",
   description: "Product 1",
   invoice_id: "Order 1 ID",
   mobile: "",
