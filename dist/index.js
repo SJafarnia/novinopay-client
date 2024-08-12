@@ -57,7 +57,7 @@ var NovinoPay = class {
    * @param {string} MerchantId
    * @param {boolean| null} sandbox Optional, if set true, uses "test" as merchant ID by default and ignores your input
    */
-  constructor(MerchantId, sandbox) {
+  constructor(MerchantId, sandbox = false) {
     if (typeof MerchantId !== "string") {
       throw new Error("MerchantId is invalid");
     }
@@ -168,3 +168,4 @@ var NovinoPayClient = class extends NovinoPay {
 0 && (module.exports = {
   NovinoPayClient
 });
+

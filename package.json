@@ -1,6 +1,6 @@
 {
   "name": "novinopay-client",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Novinopay-client is a Nodejs client for Novinopay internet payment gateway API.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
