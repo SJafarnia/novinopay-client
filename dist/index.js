@@ -105,7 +105,7 @@ var NovinoPay = class {
    */
   PaymentRequest({
     amount,
-    callBackUrl,
+    callbackUrl,
     invoice_id,
     description,
     Email,
@@ -115,7 +115,7 @@ var NovinoPay = class {
     const params = {
       merchant_id: this.merchant,
       amount,
-      callback_url: callBackUrl,
+      callback_url: callbackUrl,
       invoice_id,
       description,
       mobile,
