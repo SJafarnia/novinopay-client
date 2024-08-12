@@ -38,7 +38,7 @@ export class NovinoPay {
    * @param {string} MerchantId
    * @param {boolean| null} sandbox Optional, if set true, uses "test" as merchant ID by default and ignores your input
    */
-  constructor(MerchantId: string, sandbox: boolean=false) {
+  constructor(MerchantId: string, sandbox: boolean = false) {
     if (typeof MerchantId !== "string") {
       throw new Error("MerchantId is invalid");
     }
@@ -88,9 +88,7 @@ export class NovinoPay {
   };
 
   /**
-   * Description placeholder
-   *
-   * @param {PaymentRequestMethodInput} Object
+   *  Receives an Object of payment information
    * @param {PaymentRequestMethodInput} Object.amount
    * @param {PaymentRequestMethodInput} Object.callBackUrl
    * @param {PaymentRequestMethodInput} Object.invoice_id
@@ -136,7 +134,7 @@ export class NovinoPay {
   }
 
   /**
-   * Description placeholder
+   * Receives an Object of paymentObject information
    * @param {number} paymentObject.amount
    * @param {string} paymentObject.authority
    * @returns {VerificationResponse|Error}
