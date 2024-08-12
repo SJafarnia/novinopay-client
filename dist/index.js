@@ -92,9 +92,7 @@ var NovinoPay = class {
     }
   };
   /**
-   * Description placeholder
-   *
-   * @param {PaymentRequestMethodInput} Object
+   *  Receives an Object of payment information
    * @param {PaymentRequestMethodInput} Object.amount
    * @param {PaymentRequestMethodInput} Object.callBackUrl
    * @param {PaymentRequestMethodInput} Object.invoice_id
@@ -133,7 +131,7 @@ var NovinoPay = class {
     return promise;
   }
   /**
-   * Description placeholder
+   * Receives an Object of paymentObject information
    * @param {number} paymentObject.amount
    * @param {string} paymentObject.authority
    * @returns {VerificationResponse|Error}
@@ -168,4 +166,3 @@ var NovinoPayClient = class extends NovinoPay {
 0 && (module.exports = {
   NovinoPayClient
 });
-

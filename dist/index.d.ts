@@ -78,9 +78,7 @@ declare class NovinoPay {
      */
     private request;
     /**
-     * Description placeholder
-     *
-     * @param {PaymentRequestMethodInput} Object
+     *  Receives an Object of payment information
      * @param {PaymentRequestMethodInput} Object.amount
      * @param {PaymentRequestMethodInput} Object.callBackUrl
      * @param {PaymentRequestMethodInput} Object.invoice_id
@@ -91,7 +89,7 @@ declare class NovinoPay {
      */
     PaymentRequest({ amount, callbackUrl, invoice_id, description, Email, mobile, }: PaymentRequestMethodInput): Promise<PaymentResponse>;
     /**
-     * Description placeholder
+     * Receives an Object of paymentObject information
      * @param {number} paymentObject.amount
      * @param {string} paymentObject.authority
      * @returns {VerificationResponse|Error}
