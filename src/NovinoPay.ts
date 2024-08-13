@@ -145,7 +145,7 @@ export class NovinoPay {
   }: {
     amount: number;
     authority: string;
-  }): Promise<VerificationResponse | Error> {
+  }): Promise<VerificationResponse> {
     const self = this;
 
     const params: PaymentVerificationDataType = {

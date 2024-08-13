@@ -97,7 +97,7 @@ declare class NovinoPay {
     PaymentVerify({ amount, authority, }: {
         amount: number;
         authority: string;
-    }): Promise<VerificationResponse | Error>;
+    }): Promise<VerificationResponse>;
 }
 
 declare class NovinoPayClient extends NovinoPay {
