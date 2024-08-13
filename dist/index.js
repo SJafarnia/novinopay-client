@@ -99,7 +99,7 @@ var NovinoPay = class {
    * @param {PaymentRequestMethodInput} Object.description
    * @param {PaymentRequestMethodInput} Object.Email
    * @param {PaymentRequestMethodInput} Object.mobile
-   * @returns {*}
+   * @returns {PaymentResponse}
    */
   PaymentRequest({
     amount,
@@ -134,7 +134,7 @@ var NovinoPay = class {
    * Receives an Object of paymentObject information
    * @param {number} paymentObject.amount
    * @param {string} paymentObject.authority
-   * @returns {VerificationResponse|Error}
+   * @returns {VerificationResponse}
    */
   PaymentVerify({
     amount,

@@ -85,14 +85,14 @@ declare class NovinoPay {
      * @param {PaymentRequestMethodInput} Object.description
      * @param {PaymentRequestMethodInput} Object.Email
      * @param {PaymentRequestMethodInput} Object.mobile
-     * @returns {*}
+     * @returns {PaymentResponse}
      */
     PaymentRequest({ amount, callbackUrl, invoice_id, description, Email, mobile, }: PaymentRequestMethodInput): Promise<PaymentResponse>;
     /**
      * Receives an Object of paymentObject information
      * @param {number} paymentObject.amount
      * @param {string} paymentObject.authority
-     * @returns {VerificationResponse|Error}
+     * @returns {VerificationResponse}
      */
     PaymentVerify({ amount, authority, }: {
         amount: number;

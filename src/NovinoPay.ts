@@ -95,7 +95,7 @@ export class NovinoPay {
    * @param {PaymentRequestMethodInput} Object.description
    * @param {PaymentRequestMethodInput} Object.Email
    * @param {PaymentRequestMethodInput} Object.mobile
-   * @returns {*}
+   * @returns {PaymentResponse}
    */
   PaymentRequest({
     amount,
@@ -137,7 +137,7 @@ export class NovinoPay {
    * Receives an Object of paymentObject information
    * @param {number} paymentObject.amount
    * @param {string} paymentObject.authority
-   * @returns {VerificationResponse|Error}
+   * @returns {VerificationResponse}
    */
   PaymentVerify({
     amount,
@@ -154,7 +154,7 @@ export class NovinoPay {
       authority,
     };
 
-    const promise: Promise<VerificationResponse | Error> = new Promise(
+    const promise: Promise<VerificationResponse> = new Promise(
       (resolve, reject) => {
         self
           .request(self.url, config.API.PaymentVerification, "POST", params)
